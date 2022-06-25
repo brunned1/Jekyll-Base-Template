@@ -11,57 +11,12 @@
 </head>
 
 <body>
+
+
+    
     {{content}}
 
-    <section class="grid-spaceBetween padded bg-featured latest-news">
-        {% for item in page.news %}
-        <div class="col-4_xs-8">
-            <div class="card">
-                <div class="bg-image">
-                    <span> {{item.category}} </span> 
-                </div>
-                <div class="post-info">
-                    <p class="date"> {{item.date}} </p>
-                    <h3> {{item.title}} </h3>
-                    <p> {{item.description}} </p>
-                    <a href="{{item.url}}"> Find out more &nbsp; &#10141;</a>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-     </section>
-
-     <section class="grid-spaceAround text-center padded">
-            
-        <div class="col-12 margin-b-2 md-margin-t-1 xs-margin-t-2">
-            <h3> Meine nächsten Termine</h2>
-         </div>
-      
-
-        <!---       The next appointments   -->
-
-            <div class="col-12 grid-spaceAround padded-1">
-                {% for item in page.appointments %}
-
-                <div class="col-3_sm-12 padded-05 sm-margin-t-1 ">
-                    <div class=" padded">
-                        <p class="editable">
-                            {{item.hotel}}
-                        </p>
-                        <p class="editable">
-                            {{item.date}}
-                        </p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-       
-
-
-                    
-
-
-    </section>
+ 
 </body>
 
 </html>
